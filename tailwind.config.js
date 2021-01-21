@@ -12,10 +12,15 @@ module.exports = {
       fontFamily:{
         sb : ['Oswald'],
       },
+      boxShadow:{
+        g1: '0 4px 6px -1px rgba(209,213,219,0.1), 0 2px 4px -1px rgba(209,213,219,0.06)',
+      }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      zIndex: ['hover']
+    },
   },
   plugins: [],
 }

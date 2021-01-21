@@ -8,12 +8,13 @@ import Gallery from "../components/Gallery";
 
 function Home() {
     return (
-        <div className="">
+        <div className='bg-black'>
             <Nav/>
             <Header/>
             <Video/>
             <About/>
             <Gallery/>
+            <Lorem/>
         </div>
     );
 }
