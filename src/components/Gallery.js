@@ -1,5 +1,4 @@
 import React from 'react';
-import marc from '../images/marc3.jpg'
 import {picArray} from "../images/final/pics"
 
 function Gallery() {
