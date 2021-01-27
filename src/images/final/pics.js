@@ -37,6 +37,12 @@ import pic35 from './35.jpg'
 import pic36 from './36.jpg'
 import pic37 from './37.jpg'
 import pic38 from './38.jpg'
+import pic39 from './39.jpg'
+import pic40 from './40.jpg'
+import pic41 from './41.jpg'
+import pic42 from './42.jpg'
+import pic43 from './43.jpg'
+import pic44 from './44.jpg'
 
 export const picArray = [
     pic1,
@@ -76,7 +82,13 @@ export const picArray = [
     pic35,
     pic36,
     pic37,
-    pic38
+    pic38,
+    pic39,
+    pic40,
+    pic41,
+    pic42,
+    pic43,
+    pic44,
 ]
 
 export default {

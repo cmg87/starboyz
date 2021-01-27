@@ -3,7 +3,8 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Video from "../components/Video";
 import About from "../components/About";
-import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
+
 
 function Home() {
     return (
@@ -12,7 +13,7 @@ function Home() {
             <Header/>
             <Video/>
             <About/>
-            <Gallery/>
+            <Footer/>
         </div>
     );
 }
