@@ -10,9 +10,9 @@ function App() {
   return (
       <Router>
         <Switch>
-          <Route exact path="/" navbar={<Nav/>} component={Home} />
-          <Route exact path="/gallery" navbar={<Nav/>} component={Photos} />
-          <Route exact path="/#about" navbar={<Nav/>} component={Home} />
+          <Route exact={true} path="/" navbar={<Nav/>} component={Home} />
+          <Route exact={true} path="/gallery" navbar={<Nav/>} component={Photos} />
+          <Route exact={true} path="/#about" navbar={<Nav/>} component={Home} />
         </Switch>
       </Router>
   );
