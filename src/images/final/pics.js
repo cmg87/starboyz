@@ -43,6 +43,7 @@ import pic41 from './41.jpg'
 import pic42 from './42.jpg'
 import pic43 from './43.jpg'
 import pic44 from './44.jpg'
+import ftp from './ftp.jpg'
 
 export const picArray = [
     pic1,
@@ -89,6 +90,7 @@ export const picArray = [
     pic42,
     pic43,
     pic44,
+    ftp,
 ]
 
 export default {

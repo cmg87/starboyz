@@ -4,6 +4,7 @@ import Nav from '../components/Nav'
 import Video from "../components/Video";
 import About from "../components/About";
 import Footer from "../components/Footer";
+// import Loading from "../components/LoadingScreen";
 
 
 function Home() {
