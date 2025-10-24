@@ -1,82 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starboyz</title>
-  <link rel="icon" href="/favicon.png">
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      /* font-family: Arial, sans-serif; */
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    /* Hero Section */
-    .hero {
-      height: 100vh;
-      background: url('background.webp')  center center; /* Replace with your image path */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero button {
-      background-color: black;
-      color: white;
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
-
-    button {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem; /* Default: 16px */
-  line-height: 1.5; /* Default line-height */
-  background-color: black;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-  box-shadow: 0 0 20px 5px red;
-  transform: scale(1.05);
-}
-
-
-    
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .hero button {
-        font-size: 1.2rem;
-        padding: 0.8rem 1.5rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBoyz - Motorcycle Stunt Riders</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Futura';
+            src: url('path-to-your-futura-regular.woff2') format('woff2'),
+                 url('path-to-your-futura-regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Futura';
+            src: url('path-to-your-futura-bold.woff2') format('woff2'),
+                 url('path-to-your-futura-bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+        }
+        body { font-family: 'Futura', sans-serif; }
+    </style>
 </head>
 <body>
-  <section class="hero">
-    <a href="https://www.smfbthebrand.com/shop/starboy-kevin-marino-official-merch/G7JXOAA2TFHSGVHYBNCVC5BH"><button>Shop Merch</button></a>
-  </section>
+
+    <header class="hero-section">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                <source src="https://sbc.nyc3.cdn.digitaloceanspaces.com/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="STARBOYZ">STARBOYZ</h1>
+            <p class="hero-subtitle">MOTORCYCLE STUNT RIDERS</p>
+            <a href="#about" class="btn primary-red-bg">FUELING ADRENALINE</a>
+            <a href="#contact" class="btn secondary-btn">RIDE WITH US</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">ABOUT THE STARBOYZ</h2>
+                <p>The Starboyz are a motorcycle stunt riding group from Akron, Ohio, widely recognized for their role in shaping the early era of street stunt riding. Emerging in the late 1990s and early 2000s, they became one of the most visible and influential teams in the sport, helping to bring motorcycle stunt riding from small local scenes into mainstream awareness.</p>
+                
+                <h3>Origins and Culture</h3>
+                <p>Formed at a time when motorcycle stunt riding was largely underground, the Starboyz gained attention for their distinctive approach — combining technical precision with a strong sense of visual style and group identity. They were among the first riders to regularly film and distribute their performances, documenting wheelies, stoppies, and coordinated group rides on highways and urban roads across Ohio.</p>
+                
+                <h3>Influence and Media</h3>
+                <p>Through early stunt videos and later social media, the Starboyz helped popularize a culture of performance riding that influenced countless riders worldwide. Their name became associated with the rise of organized stunt teams and the transition of the practice from informal gatherings to structured showcases and professional events.</p>
+                
+                <h3>Legacy</h3>
+                <p>The Starboyz are often cited in discussions of modern stunt riding as one of the foundational groups that established its current form. Their contributions extend beyond performance — they helped define the visual and cultural identity of the sport. Although based in Akron, their impact has reached a global audience, and their legacy continues to influence the stunt-riding community today.</p>
+            </div>
+            <div class="about-image-wrapper">
+                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img.jpg" alt="StarBoyz riders" class="about-image parallax-bg">
+                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img2.jpg" alt="StarBoyz riders 2" class="about-image parallax-bg mobile-only">
+                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img3.jpg" alt="StarBoyz riders 3" class="about-image parallax-bg mobile-only">
+            </div>
+        </div>
+    </section>
+    
+    <section id="video-full" class="full-video-section hidden">
+        <div class="container">
+            <h2 class="section-title">THE RIDE</h2>
+            <div class="responsive-video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">INQUIRE</h2>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
+                <input type="hidden" name="form-name" value="contact" />
+                <p class="hidden">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </p>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="NAME" required>
+                    <input type="email" name="email" placeholder="EMAIL" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="PHONE (OPTIONAL)">
+                    <textarea name="message" placeholder="MESSAGE" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn primary-red-bg">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 STARBOYZ</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
