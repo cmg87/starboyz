@@ -58,9 +58,9 @@
                 <p>The Starboyz are often cited in discussions of modern stunt riding as one of the foundational groups that established its current form. Their contributions extend beyond performance — they helped define the visual and cultural identity of the sport. Although based in Akron, their impact has reached a global audience, and their legacy continues to influence the stunt-riding community today.</p>
             </div>
             <div class="about-image-wrapper">
-                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img.jpg" alt="StarBoyz riders" class="about-image parallax-bg">
-                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img2.jpg" alt="StarBoyz riders 2" class="about-image parallax-bg mobile-only">
-                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img3.jpg" alt="StarBoyz riders 3" class="about-image parallax-bg mobile-only">
+                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img.jpg" alt="StarBoyz riders" class="about-image">
+                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img2.jpg" alt="StarBoyz riders 2" class="about-image mobile-only">
+                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img3.jpg" alt="StarBoyz riders 3" class="about-image mobile-only">
             </div>
         </div>
     </section>
@@ -77,11 +77,9 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">INQUIRE</h2>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
-                <input type="hidden" name="form-name" value="contact" />
-                <p class="hidden">
-                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-                </p>
+            <form action="https://formspree.io/f/xpwoawwn" method="POST" class="contact-form">
+                <!-- Honeypot field for spam protection -->
+                <input type="text" name="_gotcha" style="display:none" />
                 <div class="form-group">
                     <input type="text" name="name" placeholder="NAME" required>
                     <input type="email" name="email" placeholder="EMAIL" required>
