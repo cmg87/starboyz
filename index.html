@@ -1,104 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarBoyz - Motorcycle Stunt Riders</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'Futura';
-            src: url('path-to-your-futura-regular.woff2') format('woff2'),
-                 url('path-to-your-futura-regular.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Futura';
-            src: url('path-to-your-futura-bold.woff2') format('woff2'),
-                 url('path-to-your-futura-bold.woff') format('woff');
-            font-weight: 700;
-            font-style: normal;
-        }
-        body { font-family: 'Futura', sans-serif; }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STARBOYZ — Born in Akron. Built on one wheel.</title>
+<meta name="description" content="StarBoyz. Motorcycle stunt riding out of Akron, Ohio. Watch the films, discover the roots, and ride with us.">
+<meta name="theme-color" content="#111110">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23ef382a'/%3E%3Ctext x='20' y='30' text-anchor='middle' font-family='Arial' font-weight='900' font-size='30' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
 </head>
 <body>
-
-    <header class="hero-section">
-        <div class="hero-video-container">
-            <video autoplay muted loop playsinline preload="auto" class="hero-video">
-                <source src="https://sbc.nyc3.cdn.digitaloceanspaces.com/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="glitch-text" data-text="STARBOYZ">STARBOYZ</h1>
-            <p class="hero-subtitle">MOTORCYCLE STUNT RIDERS</p>
-            <a href="#about" class="btn primary-red-bg">FUELING ADRENALINE</a>
-            <a href="#contact" class="btn secondary-btn">RIDE WITH US</a>
-        </div>
-    </header>
-
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2 class="section-title">ABOUT THE STARBOYZ</h2>
-                <p>The Starboyz are a motorcycle stunt riding group from Akron, Ohio, widely recognized for their role in shaping the early era of street stunt riding. Emerging in the late 1990s and early 2000s, they became one of the most visible and influential teams in the sport, helping to bring motorcycle stunt riding from small local scenes into mainstream awareness.</p>
-                
-                <h3>Origins and Culture</h3>
-                <p>Formed at a time when motorcycle stunt riding was largely underground, the Starboyz gained attention for their distinctive approach — combining technical precision with a strong sense of visual style and group identity. They were among the first riders to regularly film and distribute their performances, documenting wheelies, stoppies, and coordinated group rides on highways and urban roads across Ohio.</p>
-                
-                <h3>Influence and Media</h3>
-                <p>Through early stunt videos and later social media, the Starboyz helped popularize a culture of performance riding that influenced countless riders worldwide. Their name became associated with the rise of organized stunt teams and the transition of the practice from informal gatherings to structured showcases and professional events.</p>
-                
-                <h3>Legacy</h3>
-                <p>The Starboyz are often cited in discussions of modern stunt riding as one of the foundational groups that established its current form. Their contributions extend beyond performance — they helped define the visual and cultural identity of the sport. Although based in Akron, their impact has reached a global audience, and their legacy continues to influence the stunt-riding community today.</p>
-            </div>
-            <div class="about-image-wrapper">
-                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img.jpg" alt="StarBoyz riders" class="about-image">
-                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img2.jpg" alt="StarBoyz riders 2" class="about-image mobile-only">
-                <img src="https://sbc.nyc3.cdn.digitaloceanspaces.com/img3.jpg" alt="StarBoyz riders 3" class="about-image mobile-only">
-            </div>
-        </div>
-    </section>
-    
-    <section id="video-full" class="full-video-section hidden">
-        <div class="container">
-            <h2 class="section-title">THE RIDE</h2>
-            <div class="responsive-video-container">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">INQUIRE</h2>
-            <form action="https://formspree.io/f/xpwoawwn" method="POST" class="contact-form">
-                <!-- Honeypot field for spam protection -->
-                <input type="text" name="_gotcha" style="display:none" />
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="NAME" required>
-                    <input type="email" name="email" placeholder="EMAIL" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" placeholder="PHONE (OPTIONAL)">
-                    <textarea name="message" placeholder="MESSAGE" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn submit-btn primary-red-bg">SEND</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 STARBOYZ</p>
-        </div>
-    </footer>
-
-    <script src="index.js"></script>
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><a class="brand" href="#" aria-label="StarBoyz home">STARBOYZ<span>★</span></a><nav aria-label="Main navigation"><a href="#films">Films</a><a href="#story">Our story</a><a href="#contact" class="nav-contact">Get in touch <span>↗</span></a></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-top"><span>AKRON, OHIO / SINCE THE LATE ’90S</span><span class="hero-category">MOTORCYCLE STUNT RIDERS</span></div>
+<h1 id="hero-title">NEVER<span>RIDE ORDINARY.</span></h1>
+<div class="hero-image"><img src="assets/bdxWQdwk_v0.jpg" alt="StarBoyz motorcycle stunt film" fetchpriority="high"><div class="hero-shade"></div><div class="image-label"><span>RAW RIDING. REAL ROOTS.</span><span>EST. AKRON, OH</span></div><a class="hero-play" href="#films"><span class="play-icon">▶</span><span>WATCH THE FILMS<small>THE ORIGINALS. THE EVOLUTION.</small></span></a></div>
+<div class="hero-bottom"><p>From Ohio asphalt to a worldwide movement.<br>This is StarBoyz.</p><a class="text-link" href="#story">Know the story <span>↓</span></a></div>
+</section>
+<div class="ticker" aria-hidden="true"><span>STARBOYZ ★ TWO WHEELS. NO LIMITS. ★ AKRON, OHIO ★ STARBOYZ ★ TWO WHEELS. NO LIMITS. ★</span></div>
+<section class="films section" id="films" aria-labelledby="films-title"><div class="section-head"><div><p class="eyebrow">01 / PRESS PLAY</p><h2 id="films-title">THE FOOTAGE<br><span>SPEAKS.</span></h2></div><a class="text-link" href="https://youtube.com/@starboyzstunts?si=XC43p7iKeyNfF9JH" target="_blank" rel="noopener noreferrer">More on YouTube <span>↗</span></a></div>
+<div class="film-grid">
+<article class="film"><button class="video-launch" data-video="YSuqL8lsll8" aria-label="Play FTP 1: How it all started"><img src="assets/YSuqL8lsll8.jpg" alt="FTP 1 video thumbnail" loading="lazy"><span class="film-number">01 / THE ARCHIVE</span><span class="play-icon">▶</span><span class="watch-label">PLAY FILM ↗</span></button><div class="film-caption"><h3>FTP 1 — How it all started</h3><a href="https://youtu.be/YSuqL8lsll8?is=QauXljwFXC__eKPd" target="_blank" rel="noopener noreferrer" aria-label="Watch FTP 1 on YouTube">↗</a></div></article>
+<article class="film"><button class="video-launch" data-video="hzfEDNeydRQ" aria-label="Play FTP 2"><img src="assets/hzfEDNeydRQ.jpg" alt="StarBoyz film 2 thumbnail" loading="lazy"><span class="film-number">02 / THE ARCHIVE</span><span class="play-icon">▶</span><span class="watch-label">PLAY FILM ↗</span></button><div class="film-caption"><h3>FTP 2 — The clip</h3><a href="https://youtu.be/hzfEDNeydRQ?is=SsoAH6yKQr-6VEQG" target="_blank" rel="noopener noreferrer" aria-label="Watch film 2 on YouTube">↗</a></div></article>
+<article class="film"><button class="video-launch" data-video="qpU-mA5C3IU" aria-label="Play FTP 3: Disengage"><img src="assets/qpU-mA5C3IU.jpg" alt="StarBoyz film 3 thumbnail" loading="lazy"><span class="film-number">03 / THE ARCHIVE</span><span class="play-icon">▶</span><span class="watch-label">PLAY FILM ↗</span></button><div class="film-caption"><h3>FTP 3 — Disengage</h3><a href="https://youtu.be/qpU-mA5C3IU?is=yzjVUMuglJz0hNO0" target="_blank" rel="noopener noreferrer" aria-label="Watch film 3 on YouTube">↗</a></div></article>
+<article class="film"><button class="video-launch" data-video="bdxWQdwk_v0" aria-label="Play FTP 666"><img src="assets/bdxWQdwk_v0.jpg" alt="StarBoyz film 4 thumbnail" loading="lazy"><span class="film-number">04 / THE ARCHIVE</span><span class="play-icon">▶</span><span class="watch-label">PLAY FILM ↗</span></button><div class="film-caption"><h3>FTP 666</h3><a href="https://youtu.be/bdxWQdwk_v0?is=j7q3P81M8vrp84aZ" target="_blank" rel="noopener noreferrer" aria-label="Watch film 4 on YouTube">↗</a></div></article>
+</div></section>
+<section id="story" class="story section"><p class="eyebrow">02 / BEFORE THE FEED, THERE WAS THE FOOTAGE.</p><div class="story-grid"><h2>OHIO ROOTS.<br>WORLDWIDE<br><span>INFLUENCE.</span></h2><div class="story-copy"><p class="intro">A crew from Akron. A camera. A different way to ride.</p><p>Coming out of Ohio in the late ’90s, StarBoyz helped bring motorcycle stunt riding out of the underground and into the spotlight.</p><p>Wheelies. Stoppies. Technical riding with an unmistakable identity. They captured it on film and put it out into the world, helping shape a culture that reached far beyond their hometown.</p><p>From the early tapes to the next generation, the legacy lives on every time someone presses play.</p><div class="story-signature">AKRON MADE. <span>STARBOYZ FOREVER.</span></div></div></div></section>
+<section class="social section" id="social"><div><p class="eyebrow">03 / STAY IN THE LOOP</p><h2>KEEP UP<br>WITH THE <span>CREW.</span></h2></div><div class="social-links"><a href="https://www.instagram.com/starboyzstunts?stkn=Y29ya3hxZnRubmhk" target="_blank" rel="noopener noreferrer"><span><small>@STARBOYZSTUNTS</small>Instagram</span><span>↗</span></a><a href="https://www.facebook.com/share/14p9ynAsESs/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><span><small>STARBOYZ</small>Facebook</span><span>↗</span></a><a href="https://youtube.com/@starboyzstunts?si=XC43p7iKeyNfF9JH" target="_blank" rel="noopener noreferrer"><span><small>@STARBOYZSTUNTS</small>YouTube</span><span>↗</span></a></div></section>
+<section id="contact" class="contact section"><div><p class="eyebrow">04 / LET’S TALK</p><h2>RIDE<br>WITH <span>US.</span></h2><p>Have something in mind?<br>Send a message to the crew.</p></div><form action="https://formspree.io/f/xpwoawwn" method="POST"><input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="form-row"><label>Name<input name="name" autocomplete="name" placeholder="Your name" required></label><label>Email<input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label></div><label>Phone <span>(optional)</span><input type="tel" name="phone" autocomplete="tel" placeholder="Your phone number"></label><label>Message<textarea name="message" rows="3" placeholder="What do you have in mind?" required></textarea></label><button class="send" type="submit">SEND MESSAGE <span>↗</span></button><p class="form-note" role="status" aria-live="polite"></p></form></section>
+</main><footer><a class="brand" href="#">STARBOYZ<span>★</span></a><p>© <span id="year">2026</span> STARBOYZ. AKRON, OHIO.</p><a href="#" class="text-link">Back to top ↑</a></footer>
+<dialog id="video-dialog" aria-labelledby="video-title"><div class="dialog-header"><h2 id="video-title">StarBoyz film</h2><button id="close-video" aria-label="Close video">✕</button></div><div id="player"></div><a id="youtube-fallback" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></dialog>
+</body></html>

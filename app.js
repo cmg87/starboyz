@@ -1,0 +1,20 @@
+const dialog=document.querySelector('#video-dialog');
+const player=document.querySelector('#player');
+const closeVideo=()=>dialog.close();
+document.querySelectorAll('.video-launch').forEach(button=>button.addEventListener('click',()=>{
+ const id=button.dataset.video;
+ const title=button.closest('article').querySelector('h3').textContent;
+ document.querySelector('#video-title').textContent=title;
+ const iframe=document.createElement('iframe');
+ iframe.src=`https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+ iframe.title=title;iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';iframe.allowFullscreen=true;iframe.referrerPolicy='strict-origin-when-cross-origin';
+ player.replaceChildren(iframe);
+ document.querySelector('#youtube-fallback').href=`https://www.youtube.com/watch?v=${id}`;
+ dialog.showModal();document.body.style.overflow='hidden';
+}));
+document.querySelector('#close-video').addEventListener('click',closeVideo);
+dialog.addEventListener('close',()=>{player.replaceChildren();document.body.style.overflow='';});
+dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeVideo();}});
+document.querySelector('#year').textContent=new Date().getFullYear();
+const form=document.querySelector('form');
+form.addEventListener('submit',async e=>{e.preventDefault();const button=form.querySelector('button');const note=form.querySelector('.form-note');button.disabled=true;button.textContent='SENDING…';note.textContent='';try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});if(!response.ok)throw new Error();note.textContent='Message sent. Thanks for reaching out to the crew.';form.reset();}catch{note.textContent='Your message could not be sent. Please try again, or reach the crew through Instagram or Facebook above.';}finally{button.disabled=false;button.innerHTML='SEND MESSAGE <span>↗</span>';}});
